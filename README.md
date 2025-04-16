@@ -16,11 +16,11 @@ Uzantıyı Chrome tarayıcınıza iki farklı yöntemle yükleyebilirsiniz:
 
 Bu yöntem genellikle geliştirme veya test amaçlıdır.
 
-1.  Size sağlanan `dist` klasörünü bilgisayarınıza indirin ve sıkıştırılmış dosyadan çıkarın (unzip yapın).
+1.  Size sağlanan proje klasörünü bilgisayarınıza indirin ve sıkıştırılmış dosyadan çıkarın (unzip yapın).
 2.  Chrome tarayıcınızı açın ve adres çubuğuna `chrome://extensions/` yazarak Uzantılar sayfasına gidin.
 3.  Sayfanın sağ üst köşesindeki "Geliştirici modu" seçeneğini etkinleştirin.
 4.  Sol üstte beliren "Paketlenmemiş öğe yükle" düğmesine tıklayın.
-5.  Açılan pencerede, 1. adımda çıkardığınız `dist` klasörünü seçin ve "Klasör Seç" düğmesine tıklayın.
+5.  Açılan pencerede, 1. adımda çıkardığınız proje klasörünü seçin ve "Klasör Seç" düğmesine tıklayın.
 6.  Uzantı listenizde "Wolvesville Room Bot" görünecektir.
 
 ### Yöntem 2: CRX Paketini Yükleme (İmzalanmış Sürüm)
