@@ -12,7 +12,7 @@ Uzantı, belirli ayarlarla Wolvesville'de otomatik olarak oyun odaları oluştur
 
 Uzantıyı Chrome tarayıcınıza iki farklı yöntemle yükleyebilirsiniz:
 
-### Yöntem 1: Paketlenmemiş Uzantıyı Yükleme (`dist` klasörü)
+### Yöntem 1: Paketlenmemiş Uzantıyı Yükleme (klasör)
 
 Bu yöntem genellikle geliştirme veya test amaçlıdır.
 
