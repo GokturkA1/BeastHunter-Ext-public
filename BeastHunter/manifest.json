@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Wolvesville Room Bot",
-  "description": "Bu uzantı Wolvesville içinde otomasyonlu bir oda açılmasını sağlar.",
+  "description": "Bu uzantı Wolvesville içinde otomasyonlu bir oda açılmasını sağlar. cr: GokturkA",
   "version": "1.0.0",
   "permissions": ["storage", "unlimitedStorage", "cookies"],
   "host_permissions": ["*://*.wolvesville.com/*"],
