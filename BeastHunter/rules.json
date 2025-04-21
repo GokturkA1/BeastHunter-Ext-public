@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "modifyHeaders",
+        "responseHeaders": [
+          {
+            "name": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "name": "Access-Control-Allow-Methods",
+            "value": "GET, POST, PUT, DELETE, OPTIONS"
+          },
+          {
+            "name": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Authorization, X-Custom-Header"
+          }
+        ]
+      },
+      "condition": {
+        "urlFilter": "*://*.api-wolvesville.com/*",
+        "resourceTypes": ["xmlhttprequest", "fetch"]
+      }
+    }
+  ]
