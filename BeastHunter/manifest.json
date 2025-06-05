@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "BeastHunter",
+  "description": "Bu uzantı Wolvesville içinde otomasyonlu bir oda açılmasını sağlar. cr: GokturkA",
+  "version": "1.0.0",
+  "permissions": ["scripting", "tabs", "activeTab", "storage", "unlimitedStorage", "cookies", "declarativeNetRequest", "alarms", "sidePanel"],
+  "host_permissions": ["*://*.wolvesville.com/*", "*://*.api-wolvesville.com/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "BeastHunter Kontrol Paneli"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wolvesville.com/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle",
+      "world": "ISOLATED"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "cors_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "sandbox": {
+    "pages": [
+      "sandbox.html"
+    ]
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src *;",
+    "worker_src": "script-src 'self'; object-src 'self'; connect-src *;",
+    "sandbox": "sandbox allow-scripts; default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sandbox.html", "bridge.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
